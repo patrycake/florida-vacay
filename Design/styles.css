@@ -1,0 +1,358 @@
+
+/* -----------
+    General
+    ----------*/
+.no-margin-top {
+  padding-top: 100px;
+   margin-top: 0;
+}
+body,html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+  font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Amatic SC', cursive;
+  font-size: 17px;
+    /*position: relative;*/
+}
+a{
+color:white;
+}
+
+/*
+* Panel - Main
+*/
+
+.panel{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.panel.intro{
+  background-image: url("images/cake.jpg");
+  font-size: 70px;
+  text-align: center;
+    }
+.name{
+    color:white;
+    font-size: 2em;
+    
+font-family: 'Lobster Two', cursive;
+
+
+
+
+font-family: 'Shadows Into Light', cursive;
+  font-family: 'Pacifico', cursive;
+    font-family: 'Sacramento', cursive;
+     /*
+    font-family: 'Lobster', cursive;
+    
+    
+
+    
+font-family: 'Shadows Into Light', cursive;
+    */
+    padding-bottom:0;
+    margin-bottom:0;
+    /*letter-spacing: 5px;*/
+}
+.min .name{
+   text-shadow: 2px 2px hotpink;
+}
+.color .name {
+    text-shadow: 2px 2px purple;
+    
+}
+.click .name {
+    text-shadow: 2px 2px black;
+}
+.typo .name {
+    text-shadow: 2px 2px burlywood;
+}
+.nav .name {
+    text-shadow: 2px 2px indianred;
+}
+.quote{
+    color:white;
+    font-size: .4em;
+    
+    
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+}
+.overlay.min{
+    background-color: rgba(0,0,0,0.3);
+}
+.overlay{
+    border-radius: 0%;
+    background-color: rgba(0,0,0,0.5);
+}
+.par.overlay{
+    border-radius: 10px;
+}
+
+/*
+* Panel - Design
+*/
+.design-title{
+     padding: 20px;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Sacramento', cursive;
+    font-size: 1.5em;
+    /*color: white;
+    text-shadow: 2px 2px indianred;*/
+    letter-spacing: 10px;
+    color: white;
+}
+.panel.design {
+    position: relative;
+    background-image: url("images/thought.jpg");
+    text-align: center;
+    font-size: 50px;
+}
+.par{
+    padding-top: 20px;
+    font-size: .7em;
+    width: 45%;
+    position: absolute;
+    color: white;
+    
+}
+.left-top{
+    top: 180px;
+    left: 0px;
+    margin-left: 20px;
+}
+.right-md{
+   margin-right: 20px;
+    top: 340px;
+    right: 0; 
+}
+.left-bot{
+   margin-left: 20px;
+    top: 540px;
+    left: 0; 
+}
+/* 
+* Custom
+*/
+.intro.min{
+    background-image: url(images/pineapples.jpg);
+}
+.design.min{
+    background-image: url(images/acid-citric-citrus.jpg);
+    text-shadow: 2px 2px hotpink;
+    opacity: .6;
+}
+.intro.click{
+    background-image: url(images/abstract-art-background.jpg);
+    opacity: .8;
+}
+.design.click{
+    background-image: url(images/design-electrical-interior.jpg);
+    text-shadow: 2px 2px black;
+    opacity: .8;
+}
+.intro.color{
+    background-image: url(images/abstract-art-artistic.jpg);
+    opacity: .8;
+}
+.design.color{
+    background-image: url(images/animal-blur-chameleon-567540.jpg);
+    text-shadow: 2px 2px purple;
+    opacity: .8;
+}
+.intro.nav{
+    background-image: url(images/boat-fisherman-fishing.jpg);
+    opacity: .8;
+}
+.design.nav{
+    background-image: url(images/asphalt-blue-sky-city.jpg);
+    text-shadow: 2px 2px indianred;
+    opacity: .8;
+}
+.intro.typo{
+  background-image: url(images/alphabet-board-game-box.jpg);
+    opacity: .7;  
+}
+.design.typo{
+   background-image: url(images/antique-bind-black-and-white.jpg);
+    text-shadow: 2px 2px burlywood;
+    opacity: .7; 
+}
+/*
+* Footer
+*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   
+   color: black;
+   text-align: center;
+
+   font-size:20px;
+}
+.footer.click{
+ background-color: black;
+    color: white;
+}
+.footer.color{
+   background-color: purple;
+    color: white; 
+}
+.footer.min{
+    background-color: hotpink;
+    color: white;
+}
+.footer.nav{
+    background-color: indianred;
+    color: white;
+}
+.footer.typo{
+    background-color: burlywood;
+    color: white;
+}
+/*
+* Navigation
+*/
+#temp_menu {
+width: 100%;
+overflow:hidden;
+}
+#temp_menu ul {
+margin: 0;
+padding: 0;
+font: bolder;
+    font-size: .3em;
+font-family: 'Raleway', sans-serif;
+    font-family: 'Amatic SC', cursive;
+list-style-type: none;
+text-align: center;
+}
+#temp_menu li {
+display: inline;
+margin: 10px;
+    text-align:center;
+
+}
+#temp_menu a {
+text-decoration: none;
+
+background: white;
+
+border-radius: 100%;
+    padding: 25px;
+    text-align:center;
+}
+#temp_menu li a {
+   display: inline-block;
+    height: 60px;
+    margin: 15px 20px 15px 50px;
+    text-align: center;
+    width: 60px;
+    
+}
+ #temp_menu .min{
+    color: hotpink;
+    border: 2px solid hotpink;
+}
+#temp_menu .color{
+    color: purple;
+    border: 2px solid purple;
+}
+#temp_menu .click{
+    color: black;
+    border: 2px solid black;
+}
+#temp_menu .typo{
+    color: burlywood;
+    border: 2px solid burlywood;
+}
+#temp_menu .nav{
+    color: indianred;
+    border: 2px solid indianred;
+}
+#temp_menu a span{
+position:relative;
+top:30%;
+}
+#temp_menu .min:hover{
+    box-shadow: 0px 0px 50px hotpink;
+}
+#temp_menu .color:hover{
+    box-shadow: 0px 0px 50px purple;
+}
+#temp_menu .click:hover{
+    box-shadow: 0px 0px 50px black;
+}
+#temp_menu .typo:hover{
+    box-shadow: 0px 0px 50px burlywood;
+}
+#temp_menu .nav:hover{
+    box-shadow: 0px 0px 50px indianred;
+}
+/*
+Responsive 
+*/
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 10px;
+    }
+    .panel{
+    background-size: 300%;
+    object-fit: cover;
+    }
+    .par{  
+    font-size: .7em;
+    }
+    .foot{
+        font-size: 2em;
+    }
+    .name{
+        font-size: 1em;
+    }
+    .quote{
+        font-size: .3em;
+    }
+    #temp_menu li a {
+        margin: 0px 0px 5px 0px;
+    }
+    .par{
+        font-size: .35em;
+    }
+    .design-title{
+        font-size: 1em;
+    }
+    .left-top{
+    top: 220px;
+    left: 0px;
+    margin-left: 20px;
+    }
+    .right-md{
+   margin-right: 20px;
+        margin-top: 140px;
+    top: 220px;
+    right: 0; 
+        
+    }
+    .left-bot{
+   margin-left: 20px;
+        margin-top:160px;
+    top: 360px;
+    left: 0; 
+}
+
+}

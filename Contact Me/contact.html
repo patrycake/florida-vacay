@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Lora|News+Cycle|Pacifico|Source+Code+Pro" rel="stylesheet">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <div class="hero-image">
+        <nav>
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../Resume/resume.html">Resume</a></li>
+                <li><a href="../Projects/projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <h1>Contact Form</h1>
+
+        <div class="container">
+            <form action="" id="form" onsubmit="return check(this)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <div class="false" id="name-false"></div>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="name@domain.com..">
+                <div class="false" id="email-false"></div>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                <div class="false" id="subj-false"></div>
+
+                <input type="submit" value="Submit">
+                <!-- center button!! -->
+            </form>
+        </div>
+    </div>
+    <script>
+        function check(contact) {
+            var check = 0;
+            var con_name = document.getElementById("name").value;
+            var con_email = document.getElementById("email").value;
+            var con_subj = document.getElementById("subject").value;
+            var letters = /^[A-Za-z]+$/;
+            var email = /^.*@.*[.].{3}$/;
+            var subj = /./;
+
+            if (con_name.match(letters)) {
+                check++;
+                document.getElementById("name-false").innerHTML = "";
+            } else {
+                
+                document.getElementById("name-false").innerHTML = "Not a valid name. Try again.";
+            }
+            if (con_email.match(email)) {
+                check++;
+                document.getElementById("email-false").innerHTML = "";
+            } else {
+                document.getElementById("email-false").innerHTML = "Not a valid email. Try again.";
+            }
+            if (con_subj.match(subj)) {
+                check++;
+                 document.getElementById("subj-false").innerHTML = "";
+            } else {
+                 document.getElementById("subj-false").innerHTML = "Missing Subject";
+            }
+
+            console.log(check);
+            if(check == 3){
+                return true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
