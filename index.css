@@ -8,7 +8,7 @@ html {
 
 .hero-image {
     margin:0;
-    background-image:  url("images/blur-computer.jpg"), linear-gradient(90deg, rgba(52,51,55,1) 0%, rgba(83,92,97,1) 61%, rgba(91,121,128,1) 100%);
+    background-image:  url("/images/blur-computer.jpg"), linear-gradient(90deg, rgba(52,51,55,1) 0%, rgba(83,92,97,1) 61%, rgba(91,121,128,1) 100%);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
