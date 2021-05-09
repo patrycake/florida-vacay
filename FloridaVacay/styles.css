@@ -1,0 +1,29 @@
+/*.place-row {
+    display: flex;
+}
+
+.place {
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 1%;
+}*/
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+#dropdown-cities {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}*/
