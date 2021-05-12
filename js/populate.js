@@ -1,8 +1,14 @@
-function populate() {
-    var mydata = JSON.parse(places);
-    console.log("JSON");
+function populate(mydata = JSON.parse(places)) {
+    console.log("populate begin");
 
     var mainContainer = document.getElementById("myData");
+
+    //clear up myData children before populating
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+
+    console.log("Removal done")
     var article = [];
     var div = [];
     var k = 0;
@@ -39,14 +45,26 @@ function populate() {
         div[div.length - 1].appendChild(article[article.length - 1]);
 
         if (div.length == 3) {
+            // only 3 place per row 
             div.forEach(element => {
                 divRow.appendChild(element);
             });
             mainContainer.appendChild(divRow);
             divRow.className = "place-row tile is-ancestor";
+            //empty out place div array
             div.splice(0, 3);
+
         }
     }
+    //if there are less then 3 places left over populate
+    //populate left over remaining places 
+    div.forEach(element => {
+        element.classList.add("is-4")
+        divRow.appendChild(element);
+    });
+    mainContainer.appendChild(divRow);
+    divRow.className = "place-row tile is-ancestor";
+    console.log("populate end");
 
     /* look into document fragment?? https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment */
 }
