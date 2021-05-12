@@ -5,8 +5,8 @@ function populate(mydata = JSON.parse(places)) {
     var mainContainer = document.getElementById("myData");
 
     //clear up myData children before populating
-    while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
+    while (mainContainer.firstChild) {
+        mainContainer.removeChild(mainContainer.firstChild);
     }
 
     console.log("Removal done")
