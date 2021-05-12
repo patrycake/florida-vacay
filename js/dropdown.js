@@ -1,5 +1,6 @@
 function dropdown() {
     var mydata = JSON.parse(places);
+    mydata.sort(compareCities);
     var dropDown = document.getElementById("dropdown-content-cities");
     var cities = [];
     var haveCity = false;

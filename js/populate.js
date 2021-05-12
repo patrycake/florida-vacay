@@ -1,4 +1,5 @@
 function populate(mydata = JSON.parse(places)) {
+    mydata.sort(comparePlaces);
     console.log("populate begin");
 
     var mainContainer = document.getElementById("myData");
